@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HelloKotlin</string>
+    <string name="next">next</string>
+    <string name="next_welcome">Hi,nice to meet you.</string>
 </resources>
