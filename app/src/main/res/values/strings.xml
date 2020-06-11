@@ -4,4 +4,10 @@
     <string name="next_welcome">Hi,nice to meet you.</string>
     <string name="apple">apple</string>
     <string name="orange">orange</string>
+    <string name="setting">setting</string>
+    <string name="tiger">tiger</string>
+    <string name="panda">panda</string>
+    <string name="android">Android</string>
+    <string name="ios">IOS</string>
+    <string name="btn_list_view">intent to listView activity</string>
 </resources>

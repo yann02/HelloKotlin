@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/it_apple"
-        android:title="@string/apple" />
-    <item
-        android:id="@+id/it_orange"
-        android:title="@string/orange" />
+        android:id="@+id/it_setting"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/it_apple"
+                android:title="@string/apple" />
+            <item
+                android:id="@+id/it_orange"
+                android:title="@string/orange" />
+        </menu>
+
+    </item>
+
+    <group android:id="@+id/g_anim"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/it_tiger"
+            android:title="@string/tiger" />
+        <item
+            android:id="@+id/it_panda"
+            android:title="@string/panda" />
+    </group>
 </menu>
