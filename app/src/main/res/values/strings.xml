@@ -10,4 +10,7 @@
     <string name="android">Android</string>
     <string name="ios">IOS</string>
     <string name="btn_list_view">intent to listView activity</string>
+    <string name="intent_to_contextual_menus_by_listview">intent to contextual menus by ListView</string>
+    <string name="show_menus_of_contextual">Show menus of contextual</string>
+    <string name="intent_to_individual_view_activity">intent to individual view activity</string>
 </resources>
