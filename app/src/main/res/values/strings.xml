@@ -13,4 +13,7 @@
     <string name="intent_to_contextual_menus_by_listview">intent to contextual menus by ListView</string>
     <string name="show_menus_of_contextual">Show menus of contextual</string>
     <string name="intent_to_individual_view_activity">intent to individual view activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intent_to_second_fragment">Intent to second fragment</string>
 </resources>

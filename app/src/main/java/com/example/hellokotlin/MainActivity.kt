@@ -71,12 +71,12 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.it_tiger->{
                 if (!item.isChecked){
-                    item.setChecked(true)
+                    item.isChecked = true
                 }
             }
             R.id.it_panda->{
                 if (!item.isChecked){
-                    item.setChecked(true)
+                    item.isChecked = true
                 }
             }
         }
