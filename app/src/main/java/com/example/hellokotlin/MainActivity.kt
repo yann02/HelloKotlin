@@ -12,6 +12,7 @@ import android.widget.Button
 import com.example.hellokotlin.listview.IndividualViewActivity
 import com.example.hellokotlin.listview.ListViewActivity
 import com.example.hellokotlin.listview.ListViewOnContextualMenusActivity
+import com.example.hellokotlin.menu.pop.PopMenusActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var next: Button
@@ -27,6 +28,13 @@ class MainActivity : AppCompatActivity() {
         initLv()
         initContextMenu()
         initIndividual()
+        initPop()
+    }
+
+    private fun initPop() {
+        findViewById<Button>(R.id.btn_pop).setOnClickListener{
+            startActivity(Intent(this,PopMenusActivity::class.java))
+        }
     }
 
     private fun initIndividual() {

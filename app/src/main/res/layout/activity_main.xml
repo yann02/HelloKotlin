@@ -42,5 +42,24 @@
         android:text="@string/intent_to_individual_view_activity"
         android:textAllCaps="false"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_pop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_individual"
+        android:textAllCaps="false"
+        android:text="@string/intent_to_pop_menu_activity"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_lifeCycle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_pop"
+        android:textAllCaps="false"
+        android:text="@string/intent_to_lifecycleview"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

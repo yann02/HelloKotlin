@@ -31,11 +31,11 @@ class ListViewOnContextualMenusActivity : AppCompatActivity() {
                 override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
                     return when (item?.itemId) {
                         R.id.it_android -> {
-                            Log.d(TAG, "用户点击了${item?.title}")
+                            Log.d(TAG, "用户点击了${item.title}")
                             true
                         }
                         R.id.it_ios -> {
-                            Log.d(TAG, "用户点击了${item?.title}")
+                            Log.d(TAG, "用户点击了${item.title}")
                             true
                         }
                         else -> {
