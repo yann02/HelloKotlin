@@ -17,8 +17,7 @@
             android:textAllCaps="false"
             android:text="@string/intent_to_second_fragment"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="onClick"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
