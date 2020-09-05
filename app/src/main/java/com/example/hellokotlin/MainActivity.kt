@@ -13,6 +13,9 @@ import com.example.hellokotlin.listview.IndividualViewActivity
 import com.example.hellokotlin.listview.ListViewActivity
 import com.example.hellokotlin.listview.ListViewOnContextualMenusActivity
 import com.example.hellokotlin.menu.pop.PopMenusActivity
+import com.example.hellokotlin.ui.AnimationActivity
+import com.example.hellokotlin.ui.ShowWaveViewWithImgActivity
+import java.lang.StringBuilder
 
 class MainActivity : AppCompatActivity() {
     private lateinit var next: Button
@@ -21,7 +24,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView()
+        testApply()
+        testLet()
     }
+
+    private fun testLet() {
+        val a = listOf("a", "b", "c").let { it.size }
+        Log.d(TAG, "a=$a")
+    }
+
+    private fun testApply() {
+        StringBuilder("abc").apply {
+            append("efg")
+            Log.d(TAG, "stringbuild value is $this")
+        }
+    }
+
 
     private fun initView() {
         initNext()
@@ -29,29 +47,43 @@ class MainActivity : AppCompatActivity() {
         initContextMenu()
         initIndividual()
         initPop()
+        showWaveViewWithImg()
+        intentToAnimationActivity()
+    }
+
+    private fun intentToAnimationActivity() {
+        findViewById<Button>(R.id.btn_animation).setOnClickListener {
+            startActivity(Intent(this, AnimationActivity::class.java))
+        }
+    }
+
+    private fun showWaveViewWithImg() {
+        findViewById<Button>(R.id.btn_show_wave_view_img).setOnClickListener {
+            startActivity(Intent(this, ShowWaveViewWithImgActivity::class.java))
+        }
     }
 
     private fun initPop() {
-        findViewById<Button>(R.id.btn_pop).setOnClickListener{
-            startActivity(Intent(this,PopMenusActivity::class.java))
+        findViewById<Button>(R.id.btn_pop).setOnClickListener {
+            startActivity(Intent(this, PopMenusActivity::class.java))
         }
     }
 
     private fun initIndividual() {
-        findViewById<Button>(R.id.btn_individual).setOnClickListener(){
-            startActivity(Intent(this,IndividualViewActivity::class.java))
+        findViewById<Button>(R.id.btn_individual).setOnClickListener() {
+            startActivity(Intent(this, IndividualViewActivity::class.java))
         }
     }
 
     private fun initContextMenu() {
-        findViewById<Button>(R.id.btn_contextual_menu).setOnClickListener(){
-            startActivity(Intent(this,ListViewOnContextualMenusActivity::class.java))
+        findViewById<Button>(R.id.btn_contextual_menu).setOnClickListener() {
+            startActivity(Intent(this, ListViewOnContextualMenusActivity::class.java))
         }
     }
 
     private fun initLv() {
-        findViewById<Button>(R.id.btn_lv).setOnClickListener(){
-            startActivity(Intent(this,ListViewActivity::class.java))
+        findViewById<Button>(R.id.btn_lv).setOnClickListener() {
+            startActivity(Intent(this, ListViewActivity::class.java))
         }
     }
 
@@ -76,14 +108,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         Log.d(TAG, "clicked item's id is ${item.itemId}")
-        when(item.itemId){
-            R.id.it_tiger->{
-                if (!item.isChecked){
+        when (item.itemId) {
+            R.id.it_tiger -> {
+                if (!item.isChecked) {
                     item.setChecked(true)
                 }
             }
-            R.id.it_panda->{
-                if (!item.isChecked){
+            R.id.it_panda -> {
+                if (!item.isChecked) {
                     item.setChecked(true)
                 }
             }
@@ -97,7 +129,7 @@ class MainActivity : AppCompatActivity() {
         menuInfo: ContextMenu.ContextMenuInfo?
     ) {
         super.onCreateContextMenu(menu, v, menuInfo)
-        menuInflater.inflate(R.menu.context_menu,menu)
+        menuInflater.inflate(R.menu.context_menu, menu)
     }
 
     companion object {

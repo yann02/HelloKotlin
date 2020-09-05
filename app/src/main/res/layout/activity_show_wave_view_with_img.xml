@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowWaveViewWithImgActivity">
+
+<!--    <com.example.hellokotlin.widgets.WaveViewWithImg-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:src="@drawable/thinking_in_java"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    
+    <com.example.hellokotlin.widgets.WaveView
+        android:layout_width="412px"
+        android:layout_height="412px"
+        android:id="@+id/wv_left_lang"
+        app:srcWaveView="@drawable/speech"
+        app:colorWaveView="#4992E6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

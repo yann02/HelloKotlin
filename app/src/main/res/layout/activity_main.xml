@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
     tools:context="com.example.hellokotlin.MainActivity">
 
     <Button
@@ -57,9 +58,40 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_lifeCycle"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_pop"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pop"
         android:textAllCaps="false"
         android:text="@string/intent_to_lifecycleview"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_show_wave_view_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lifeCycle"
+        android:textAllCaps="false"
+        android:text="@string/show_wave_view_with_image"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img"
+        android:alpha=".5"
+        android:background="@android:color/holo_blue_dark"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_animation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img"
+        android:textAllCaps="false"
+        android:text="@string/animation"/>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
