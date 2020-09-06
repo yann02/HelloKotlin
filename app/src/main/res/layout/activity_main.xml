@@ -35,63 +35,69 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_lv" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_individual"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_contextual_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/intent_to_individual_view_activity"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_contextual_menu" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_pop"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_individual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intent_to_pop_menu_activity"
         android:textAllCaps="false"
-        android:text="@string/intent_to_pop_menu_activity"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_individual" />
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_lifeCycle"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pop"
-        android:textAllCaps="false"
-        android:text="@string/intent_to_lifecycleview"/>
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_show_wave_view_img"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lifeCycle"
+        android:text="@string/intent_to_lifecycleview"
         android:textAllCaps="false"
-        android:text="@string/show_wave_view_with_image"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pop" />
+
+    <Button
+        android:id="@+id/btn_show_wave_view_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_wave_view_with_image"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lifeCycle" />
 
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img"
         android:alpha=".5"
         android:background="@android:color/holo_blue_dark"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img" />
 
     <Button
+        android:id="@+id/btn_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_animation"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img"
+        android:text="@string/animation"
         android:textAllCaps="false"
-        android:text="@string/animation"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_wave_view_img" />
 
-
-
+    <Button
+        android:id="@+id/btn_flip_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/flip_animation"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_animation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

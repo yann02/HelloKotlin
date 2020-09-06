@@ -14,6 +14,7 @@ import com.example.hellokotlin.listview.ListViewActivity
 import com.example.hellokotlin.listview.ListViewOnContextualMenusActivity
 import com.example.hellokotlin.menu.pop.PopMenusActivity
 import com.example.hellokotlin.ui.AnimationActivity
+import com.example.hellokotlin.ui.FlipAnimationActivity
 import com.example.hellokotlin.ui.ShowWaveViewWithImgActivity
 import java.lang.StringBuilder
 
@@ -49,11 +50,18 @@ class MainActivity : AppCompatActivity() {
         initPop()
         showWaveViewWithImg()
         intentToAnimationActivity()
+        intentToFlipAnimationActivity()
     }
 
     private fun intentToAnimationActivity() {
         findViewById<Button>(R.id.btn_animation).setOnClickListener {
             startActivity(Intent(this, AnimationActivity::class.java))
+        }
+    }
+
+    private fun intentToFlipAnimationActivity() {
+        findViewById<Button>(R.id.btn_flip_animation).setOnClickListener {
+            startActivity(Intent(this, FlipAnimationActivity::class.java))
         }
     }
 

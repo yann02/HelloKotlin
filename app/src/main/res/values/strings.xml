@@ -18,6 +18,10 @@
     <string name="intent_to_lifecycleview">intent to lifeCycleView</string>
     <string name="show_wave_view_with_image">Show Wave View with Image</string>
     <string name="animation">Animation</string>
+    <string name="flip_animation">FlipAnimation</string>
+    <string name="description_image_1">漂亮的风景图片</string>
+    <string name="card_back_title">心有多大</string>
+    <string name="card_back_description">梦想就有多大鸭</string>
     <string name="lorem_ipsum">范文预览： 2006年，我根据领导的各项工作部署安排，在各位同事的支持帮助下，努力按照“三个创新”和“两高两低”的工作要求，坚持本本分分做人，扎扎实实做事，较好地完成了各项工作任务。现将一年来的工作情况汇报如下： 1．创新服务方式。我按照创新工作的要求，结合自身工作实际，积极主动开展客户走访交谈，通过走访交谈，我更加熟知了客户的姓名、经营地点、网点分布情况，并及时向领导提出改善服务的建议，有效地优化了送货时间、线路和户次。 2．提高服务质量。作为一名服务工作者，努力提高自己的服务质量，讲求服务态度，千方百计地使客户满意是我们送货员永恒的目标。在每一次发货过程中，我都随身携带着一个日记本，利用发货空闲的短短几分钟，记录每位客户的情况。我多次主动指导客户销售，当好客户参谋，宣传企业品牌，解除了客户的具体困难。同时，坚持做到不迟到、不早退，遵守国家法规与公司的劳动纪律，做到安全生产，文明作业。 3．降低工作成本。在领导的统一调度下，我根据销售部门发货委托单据，我在第一时间，仔细核对，正确填写和递送相应的单据、报表，保存有关记录文件，认真做好货品发送工作，耐心地与每位客户当面点清品种数量，并积极协助其他发货员做好货物的搬卸工作，提高了发货效率。 在全年的工作中，有成绩也有不足，在今后工作中。</string>
 
 </resources>
