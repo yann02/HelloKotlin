@@ -8,6 +8,9 @@ import android.widget.AbsListView
 import android.widget.AdapterView
 import android.widget.ListView
 import com.example.hellokotlin.R
+import com.example.hellokotlin.entities.events.AlphaEvent
+import com.example.hellokotlin.entities.events.MessageEvent
+import org.greenrobot.eventbus.EventBus
 
 class ListViewActivity : AppCompatActivity() {
     private lateinit var listview: ListView
@@ -15,6 +18,8 @@ class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        EventBus.getDefault().post(MessageEvent())
         initData()
         initView()
     }
@@ -25,7 +30,7 @@ class ListViewActivity : AppCompatActivity() {
 
     private fun initView() {
         listview = findViewById(R.id.lv_main)
-        listview.adapter = ListViewAdapter(data,this)
+        listview.adapter = ListViewAdapter(data, this)
         registerForContextMenu(listview)
 //        with(listview){
 //            choiceMode=ListView.CHOICE_MODE_MULTIPLE_MODAL
@@ -65,25 +70,25 @@ class ListViewActivity : AppCompatActivity() {
         menuInfo: ContextMenu.ContextMenuInfo?
     ) {
         super.onCreateContextMenu(menu, v, menuInfo)
-        menuInflater.inflate(R.menu.context_menu,menu)
+        menuInflater.inflate(R.menu.context_menu, menu)
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
         val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
         return when (item.itemId) {
             R.id.it_android -> {
-                Log.d(TAG,"info.id=${info.id}")
+                Log.d(TAG, "info.id=${info.id}")
                 true
             }
             R.id.it_ios -> {
-                Log.d(TAG,"info.id=${info.id}")
+                Log.d(TAG, "info.id=${info.id}")
                 true
             }
             else -> super.onContextItemSelected(item)
         }
     }
 
-    companion object{
-        const val TAG="ListViewActivity"
+    companion object {
+        const val TAG = "ListViewActivity"
     }
 }

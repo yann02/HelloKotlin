@@ -18,4 +18,5 @@
     <string name="intent_to_second_fragment">Intent to second fragment</string>
     <string name="animal">animal</string>
     <string name="fruit">fruit</string>
+    <string name="hello">hello</string>
 </resources>
