@@ -13,8 +13,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hellokotlin.listview.IndividualViewActivity
 import com.example.hellokotlin.listview.ListViewOnContextualMenusActivity
+<<<<<<< HEAD
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
+=======
+import com.example.hellokotlin.menu.pop.PopMenusActivity
+import com.example.hellokotlin.ui.AnimationActivity
+import com.example.hellokotlin.ui.ShowWaveViewWithImgActivity
+import java.lang.StringBuilder
+>>>>>>> 0f7499094af016a5e2d0c167f3810195d69bc56e
 
 class MainActivity : AppCompatActivity() {
     private lateinit var next: Button
@@ -25,13 +32,49 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d(TAG,"onCreate")
         initView()
+        testApply()
+        testLet()
     }
+
+    private fun testLet() {
+        val a = listOf("a", "b", "c").let { it.size }
+        Log.d(TAG, "a=$a")
+    }
+
+    private fun testApply() {
+        StringBuilder("abc").apply {
+            append("efg")
+            Log.d(TAG, "stringbuild value is $this")
+        }
+    }
+
 
     private fun initView() {
         initNext()
         initLv()
         initContextMenu()
         initIndividual()
+        initPop()
+        showWaveViewWithImg()
+        intentToAnimationActivity()
+    }
+
+    private fun intentToAnimationActivity() {
+        findViewById<Button>(R.id.btn_animation).setOnClickListener {
+            startActivity(Intent(this, AnimationActivity::class.java))
+        }
+    }
+
+    private fun showWaveViewWithImg() {
+        findViewById<Button>(R.id.btn_show_wave_view_img).setOnClickListener {
+            startActivity(Intent(this, ShowWaveViewWithImgActivity::class.java))
+        }
+    }
+
+    private fun initPop() {
+        findViewById<Button>(R.id.btn_pop).setOnClickListener {
+            startActivity(Intent(this, PopMenusActivity::class.java))
+        }
     }
 
     private fun initIndividual() {
@@ -47,10 +90,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initLv() {
+<<<<<<< HEAD
 //        findViewById<Button>(R.id.btn_lv).setOnClickListener() {
 //            startActivity(Intent(this, ListViewActivity::class.java))
 //        }
         EventBus.getDefault().post("Hi")
+=======
+        findViewById<Button>(R.id.btn_lv).setOnClickListener() {
+            startActivity(Intent(this, ListViewActivity::class.java))
+        }
+>>>>>>> 0f7499094af016a5e2d0c167f3810195d69bc56e
     }
 
     private fun initNext() {
@@ -78,12 +127,20 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.it_tiger -> {
                 if (!item.isChecked) {
+<<<<<<< HEAD
                     item.isChecked = true
+=======
+                    item.setChecked(true)
+>>>>>>> 0f7499094af016a5e2d0c167f3810195d69bc56e
                 }
             }
             R.id.it_panda -> {
                 if (!item.isChecked) {
+<<<<<<< HEAD
                     item.isChecked = true
+=======
+                    item.setChecked(true)
+>>>>>>> 0f7499094af016a5e2d0c167f3810195d69bc56e
                 }
             }
         }

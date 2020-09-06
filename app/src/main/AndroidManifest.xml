@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".CircleIndicator.CircleIndicatorActivity">
 
         </activity>
@@ -29,6 +30,16 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".listview.IndividualViewActivity" />
+=======
+        <activity android:name=".ui.AnimationActivity"></activity>
+        <activity android:name=".ui.ShowWaveViewWithImgActivity" />
+        <activity
+            android:name=".menu.pop.PopMenusActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".listview.IndividualViewActivity"
+            android:theme="@style/NextAppTheme" />
+>>>>>>> 0f7499094af016a5e2d0c167f3810195d69bc56e
         <activity android:name=".listview.ListViewOnContextualMenusActivity" />
         <activity android:name=".listview.RecycleviewActivity" />
         <activity android:name=".listview.ListViewActivity"

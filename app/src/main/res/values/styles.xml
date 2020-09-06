@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NextAppTheme" parent="Theme.AppCompat.DayNight" />
+
+    <declare-styleable name="WaveViewWithImg">
+        <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
+        <attr name="src" format="reference" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="WaveView">
+        <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
+        <attr name="srcWaveView" format="reference" />
+        <attr name="colorWaveView" format="color" />
+    </declare-styleable>
 </resources>
